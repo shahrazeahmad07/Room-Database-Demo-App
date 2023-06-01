@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/update_record"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/llName"
@@ -13,7 +24,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/tvDialogTitle">
 
         <TextView
             android:layout_width="wrap_content"
@@ -63,46 +74,26 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnAddRecord"
-        android:layout_width="match_parent"
+        android:id="@+id/btnDialogUpdate"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="15dp"
-        android:text="@string/add_record"
+        android:text="Update"
         android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@id/llEmail" />
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/llEmail"
+        app:layout_constraintEnd_toStartOf="@id/btnDialogCancel"
+        android:layout_marginEnd="5dp"/>
 
-    <TextView
-        android:id="@+id/tvDisplay"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btnDialogCancel"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/all_the_inserted_records"
-        android:textSize="18sp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/llEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnAddRecord" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDisplay" />
-
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:gravity="center"
-        android:text="@string/no_records_available"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDisplay"
-        android:visibility="gone"/>
+        android:layout_marginHorizontal="7dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
