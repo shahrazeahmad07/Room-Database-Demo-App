@@ -15,7 +15,6 @@ abstract class EmployeeDatabase : RoomDatabase() {
         private var INSTANCE: EmployeeDatabase? = null
 
         fun getInstance(context: Context): EmployeeDatabase {
-
             synchronized(this) {
                 var instance = INSTANCE
 
