@@ -5,7 +5,7 @@
     <string name="email_id">Email ID</string>
     <string name="enter_email">Enter Email</string>
     <string name="add_record">Add Record</string>
-    <string name="all_the_inserted_records">All the inserted records</string>
+    <string name="all_the_inserted_records">~All the inserted records~</string>
     <string name="no_records_available">No records available!!</string>
     <string name="update_record">Update Record</string>
 </resources>

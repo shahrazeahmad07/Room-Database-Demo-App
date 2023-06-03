@@ -77,7 +77,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/all_the_inserted_records"
-        android:textSize="18sp"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnAddRecord" />
@@ -90,9 +91,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDisplay" />
+        app:layout_constraintTop_toBottomOf="@id/tvDisplay"
+        tools:listitem="@layout/item_employee_entry"/>
 
     <TextView
+        android:id="@+id/tvNoData"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
