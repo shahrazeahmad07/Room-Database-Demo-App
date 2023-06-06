@@ -8,4 +8,6 @@
     <string name="all_the_inserted_records">~All the inserted records~</string>
     <string name="no_records_available">No records available!!</string>
     <string name="update_record">Update Record</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
 </resources>
