@@ -1,5 +1,5 @@
-# Room-Database-Demo-App
-A simple Room Database CRUD app, that I have made to learn Room Database in Android!
+# User Record Room Database CRUD App
+A simple Room Database CRUD app in which we can save the user's name and email.
 
 ## Features
 -> Add Record
