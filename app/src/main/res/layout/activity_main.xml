@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -69,6 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:maxWidth="320dp"
+        android:paddingVertical="10dp"
         android:layout_marginHorizontal="15dp"
         android:text="@string/add_record"
         android:textAllCaps="false"
@@ -82,6 +84,7 @@
         android:text="@string/all_the_inserted_records"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:layout_marginVertical="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnAddRecord" />
